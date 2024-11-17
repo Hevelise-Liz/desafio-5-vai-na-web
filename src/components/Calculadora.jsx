@@ -26,9 +26,9 @@ export default function Calculadora() {
   }
 
   function calculate() {
-    if (operator === "÷") setNum(oldnum / num);
-    else if (operator === "×") setNum(oldnum * num);
-    else if (operator === "-") setNum(oldnum - num);
+    if (operator === "÷") setNum(parseFloat(oldnum) / parseFloat(num));
+    else if (operator === "×") setNum(parseFloat(oldnum) * parseFloat(num));
+    else if (operator === "-") setNum(parseFloat(oldnum) - parseFloat(num));
     else if (operator === "+") setNum(parseFloat(oldnum) + parseFloat(num));
   }
 
