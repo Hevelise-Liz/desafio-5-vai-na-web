@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../components/Calculadora.css";
+import "../calculadora/Calculadora.css";
 export default function Calculadora() {
   const [num, setNum] = useState(0);
   const [oldnum, setOldNum] = useState(0);
